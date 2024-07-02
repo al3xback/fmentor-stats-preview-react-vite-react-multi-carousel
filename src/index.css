@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+h1,
+h2 {
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	color: #fff;
+	line-height: 1.25;
+}
+
+h2 {
+	font-size: 2.6rem;
+}
+
+mark {
+	background-color: rgba(0, 0, 0, 0);
+	color: #aa5cdb;
+}
+
+body {
+	position: relative;
+	display: flex;
+	min-height: 100vh;
+	background-color: #090b1a;
+	font-family: 'Inter', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeSpeed;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.6);
+	line-height: 1.73;
+}
+
+.btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid rgba(0, 0, 0, 0);
+	color: inherit;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.15s ease-in-out;
+}
+
+.btn--link {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.btn--link:hover {
+	text-decoration: underline;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	border: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+}
+
+.container {
+	padding: 0 2.4rem;
+}
+
+#root {
+	display: flex;
+	flex: auto;
+}
+
+.main,
+.main .container {
+	display: flex;
+	flex: auto;
+}
+
+.main .container {
+	justify-content: center;
+	align-items: center;
+}
+
+/* overwrite react-multi-carousel */
+
+.react-multi-carousel-item {
+	background-color: #aa5cdb;
+	user-select: none;
+}
+
+.react-multiple-carousel__arrow {
+	min-width: 30px;
+	min-height: 30px;
+	background: rgba(0, 0, 0, 0);
+}
+
+.react-multiple-carousel__arrow::before {
+	font-size: 12px;
+}
+
+.react-multiple-carousel__arrow--left {
+	left: calc(2% + 1px);
+}
+
+.react-multiple-carousel__arrow--right {
+	right: calc(2% + 1px);
+}
+
+.react-multi-carousel-dot-list {
+	margin: 6px 0;
+}
+
+.react-multi-carousel-dot button {
+	width: 8px;
+	height: 8px;
+	border-width: 0;
+	opacity: 0.5;
+}
+
+.react-multi-carousel-dot--active button,
+.react-multi-carousel-dot button:hover:active {
+	background: #fff;
+	opacity: 1;
+}
