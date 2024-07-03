@@ -111,13 +111,13 @@ body {
 }
 
 .react-multiple-carousel__arrow {
-	min-width: 30px;
-	min-height: 30px;
+	min-width: 36px;
+	min-height: 36px;
 	background: rgba(0, 0, 0, 0);
 }
 
 .react-multiple-carousel__arrow::before {
-	font-size: 12px;
+	font-size: 18px;
 }
 
 .react-multiple-carousel__arrow--left {
